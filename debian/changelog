@@ -1,3 +1,116 @@
+libevent (2.0.19-stable-3) unstable; urgency=low
+
+  * [ceb52d98] DH compatibility level is 9
+  * [7792ab18] Support multiarch (Closes: #675320)
+
+ -- Anibal Monsalve Salazar <anibal@debian.org>  Sun, 03 Jun 2012 08:10:07 +1000
+
+libevent (2.0.19-stable-2) unstable; urgency=low
+
+  * [cbdbe5b8] add hardening build-flags (Closes: 673707)
+  * [b5f4e321] change default compression to xz
+
+ -- Leo Costela <costela@debian.org>  Mon, 21 May 2012 00:16:59 +0200
+
+libevent (2.0.19-stable-1) unstable; urgency=low
+
+  * [21c5f34e] Imported Upstream version 2.0.19-stable
+  * [aad0456e] debian/watch: only check stable versions
+  * [09bb9c1d] debian/control: bump policy to 3.9.3 (no changes)
+
+ -- Leo Costela <costela@debian.org>  Mon, 07 May 2012 15:54:12 +0200
+
+libevent (2.0.18-stable-1) unstable; urgency=low
+
+  * [d094fba3] Imported Upstream version 2.0.18-stable
+  * [6717e7ac] correct vcs-browse link
+
+ -- Leo Costela <costela@debian.org>  Fri, 30 Mar 2012 16:24:30 +0200
+
+libevent (2.0.17-stable-1) unstable; urgency=low
+
+  * [98fed68d] Imported Upstream version 2.0.17-stable
+  * [82af6f34] update homepage to libevent.org
+  * [becd7e37] re-adding multiarch to TODO
+  * [8b2c71ac] shlibs: correct minimal version for current API (2.0.10)
+
+ -- Leo Costela <costela@debian.org>  Mon, 13 Feb 2012 23:32:24 +0100
+
+libevent (2.0.16-stable-1) unstable; urgency=low
+
+  * New upstream version 2.0.16-stable
+  * Uploading to unstable, see http://bugs.debian.org/631018
+
+ -- Anibal Monsalve Salazar <anibal@debian.org>  Mon, 28 Nov 2011 15:39:09 +1100
+
+libevent (2.0.13-stable-1) experimental; urgency=low
+
+  * New upstream version 2.0.13-stable
+  * Pass "-Zbzip2 -z9" to dpkg-deb
+
+ -- Anibal Monsalve Salazar <anibal@debian.org>  Sun, 28 Aug 2011 14:46:57 +1000
+
+libevent (1.4.14b-stable-1) unstable; urgency=low
+
+  * New upstream version 1.4.14b-stable
+  * Source format is 3.0 (quilt)
+  * Standards-Version is 3.9.2
+  * Pass parameters -Zbzip2 and -z9 to dpkg-deb via dh_builddeb
+  * Fix debhelper-but-no-misc-depends
+  * Fix debian-rules-missing-recommended-target
+  * Fix description-synopsis-starts-with-article
+
+ -- Anibal Monsalve Salazar <anibal@debian.org>  Sun, 28 Aug 2011 12:49:20 +1000
+
+libevent (2.0.12-stable-1) experimental; urgency=low
+
+  * [9be9bdb9] new upstream version 2.0.12-stable
+  * [7a119447] add myself to uploaders (with permission from Anibal)
+  * [5941f8df] add VCS- fields to debian/control
+  * [3a410d4c] use dh 8 short style; remove unneeded build-dep on libtool
+  * [5217845e] bump compat to 8
+  * [3237604b] remove old README.source
+  * [0cc15d5b] remove README.Debian; install whatsnew-2.0.txt to docs instead
+  * [281c8d2e] source/options: don't set compression level (9 is the default 
+               anyway)
+  * [08517840] clean up debian/watch
+  * [18d75ca4] remove unneeded debian/*.dirs
+  * [1967343a] add TODO about cleaning up debian/copyright
+  * [c567b3fd] install pkgconfig file with more generic glob (*.pc, instead of 
+               libevent*.pc)
+  * [3b6f7cb9] add ".pc" to .gitignore for quilt
+  * [73325895] bump policy to 3.9.2 (no changes)
+  * [2fe9450d] adding libevent-dbg package
+  * [7d85b523] rename all *.files to *.install
+  * [169fffc7] disable regression tests while building
+  * [611912d3] add shlibs files for all lib packages
+  * [6dec46d3] some copy-editing in debian/control
+  * [4733768d] add patch to always build with -no-undefined
+  * [f2916660] build with -Wl,--as-needed,-z,defs,--no-add-needed
+  * [b8fc89d7] debian/control: remove redundant sections and priorities
+  * [ebd9fa80] changelog entry for 2.0.12-stable-1
+
+ -- Leo Costela <costela@debian.org>  Fri, 17 Jun 2011 16:01:41 +0200
+
+libevent (2.0.10-stable-1) experimental; urgency=low
+
+  * New upstream release
+    Closes: 581221, 607984
+  * Install libevent*.pc into /usr/lib/pkgconfig
+    Closes: 569274
+  * The man pages event.3 and evdns.3 are not shipped anymore.
+  * Fix out-of-date-standards-version
+  * Source format is 3.0 (quilt)
+  * Pass parameters -Zbzip2 and -z9 to dpkg-deb via dh_builddeb
+
+ -- Anibal Monsalve Salazar <anibal@debian.org>  Sun, 16 Jan 2011 18:19:25 +1100
+
+libevent (2.0.3-alpha-1) experimental; urgency=low
+
+  * New upstream release
+
+ -- Anibal Monsalve Salazar <anibal@debian.org>  Sat, 21 Nov 2009 23:35:53 +1100
+
 libevent (1.4.13-stable-1) unstable; urgency=low
 
   * New upstream release

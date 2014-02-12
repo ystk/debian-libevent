@@ -1,14 +1,14 @@
 This package was debianized by Simon Law <sfllaw@debian.org> on
 Tue, 30 Jul 2002 02:30:23 -0400.
 
-It was downloaded from http://www.monkey.org/~provos/libevent/
+It was downloaded from http://libevent.org
 
 Upstream Author: Niels Provos <provos@citi.umich.edu>
 
 Copyright:
 
 This program is licensed under the BSD license.  In addition, it links
-to an error handling library that is also covered the BSD license.
+to an error handling library that is also covered by the BSD license.
 
 	Both licenses are reproduced below.
 
