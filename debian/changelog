@@ -1,3 +1,13 @@
+libevent (1.4.13-stable-1+deb6u1) squeeze-lts; urgency=low
+
+  * Non-maintainer upload by the Debian LTS team.
+  * Fix potential heap overflow in buffer/bufferevent APIs reported in
+    CVE-2014-6272 by applying the upstream-provided patch:
+    https://github.com/libevent/libevent/commit/7b21c4eabf1f3946d3f63cce1319c490caab8ecf
+    Closes: #774645
+
+ -- Nguyen Cong <cong.nguyenthe@toshiba-tsdv.com>  Tue, 13 Jan 2015 16:00:14 +0700
+
 libevent (1.4.13-stable-1) unstable; urgency=low
 
   * New upstream release
